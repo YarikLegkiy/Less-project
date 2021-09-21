@@ -1,0 +1,63 @@
+// main: ../style.less
+
+.btn {
+  padding: 1.13rem 3.53rem;
+
+  font-size: .93rem;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+
+  &--header {
+    padding: .8rem 1.93rem;
+
+    color: @white;
+
+    border: 1px solid @white;
+
+    transition: background .2s ease-in-out, color .2s linear;
+
+    &:hover {
+      color: @pink;
+      background: @white;
+    }
+  }
+
+  &--intro {
+    color: @pink;
+
+    background: @white;
+    opacity: .85;
+
+    transition: opacity .2s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &--sm {
+    font-size: .93rem;
+    color: @pink;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &--form {
+    color: @white;
+    background: @pink;
+
+    opacity: .85;
+
+    transition: opacity .2s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

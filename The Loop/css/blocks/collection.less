@@ -1,0 +1,53 @@
+// main: ../style.less
+
+.collection {
+    width: 100%;
+    padding-top: 4rem;
+}
+
+.collection__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    @media screen and (max-width: 390px) {
+        row-gap: 1rem;
+    }
+}
+
+.collection__card {
+
+    &--men {
+        background: url(../../images/collection-men.png) no-repeat right bottom;
+    }
+
+    &--women {
+        background: url(../../images/collection-women.png) no-repeat right bottom;
+    }
+
+    @media screen and (max-width: 615px) {
+        grid-column: span 2;
+    }
+}
+
+.collection__title {
+    margin-bottom: 1.66rem;
+
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    strong {
+        font-weight: 500;
+    }
+}
+
+.collection__subtitle {
+    margin-bottom: 3.66rem;
+
+    font-size: 1.06rem;
+    font-weight: 300;
+}
+
+.collection__link {
+    margin-bottom: 4.86rem;
+}

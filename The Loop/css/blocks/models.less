@@ -1,0 +1,77 @@
+// main: ../style.less
+
+.models {
+    width: 100%;
+    padding: 10rem 0;
+    background-color: @white;
+
+    @media screen and (max-width: 390px) {
+        padding: 5rem 0;
+    }
+}
+
+.models__title {
+    margin-bottom: 6.86rem;
+
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: @black;
+
+    text-transform: uppercase;
+}
+
+.models__cards {
+    margin-bottom: 6.86rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+
+    @media screen and (max-width: 950px) {
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+}
+
+.models__card {
+    padding: 1.66rem;
+
+    border: 3px solid @beige;
+    cursor: pointer;
+    transition: transform .2s linear;
+
+    img {
+        display: block;
+        margin: 0 auto 1.66rem;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &--title {
+        max-width: 7.46rem;
+        margin: 0 auto 1rem;
+        font-size: .93rem;
+        font-weight: 600;
+        line-height: 1.2rem;
+    }
+
+    &--subtitle {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: @beige;
+    }
+
+    @media screen and (max-width: 950px) {
+        grid-column: span 2;
+        
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    @media screen and (max-width: 390px) {
+        grid-column: span 4;
+    }
+}

@@ -1,0 +1,51 @@
+// main: ../style.less
+
+.about {
+    position: relative;
+    width: 100%;
+    padding: 16rem 0 16.53rem;
+
+    @media screen and (max-width: 812px) {
+
+        padding: 8rem 0 8.53rem;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0; 
+            left: 0;
+            width: 100%; 
+            height: 100%;  
+            opacity: .4; 
+            z-index: -1;
+            background: url(../../images/covid-img01.png) no-repeat center;
+            background-size: cover;
+        }
+    }
+
+    &--img-first {
+        position: absolute;
+        left: -1rem;
+        top: 0;
+        z-index: -1;
+
+        @media screen and (max-width: 1365px) {
+            opacity: .5;
+        }
+
+        @media screen and (max-width: 812px) {
+            display: none;
+        }
+    }
+
+    &--img-second {
+        position: absolute;
+        right: 0rem;
+        bottom: -5rem;
+        z-index: -1;
+    }
+
+    &--content {
+        max-width: 43.2rem;
+    }
+}

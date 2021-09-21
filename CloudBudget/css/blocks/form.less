@@ -1,0 +1,48 @@
+// main: ../style.less
+
+.content__between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    width: 100%;
+    max-width: 36rem;
+    padding: 1.4rem 2.06rem;
+    margin-bottom: 1.6rem;
+
+    font-family: inherit;
+    color: gray;
+
+    border-radius: 6px;
+    border: 1px solid #333333;
+
+    &--sm {
+        max-width: 17rem;
+
+        &:first-child {
+            margin-right: 1rem;
+        }
+    }
+}
+
+.select {
+    width: 100%;
+
+    font-family: inherit;
+    color: gray;
+
+    border: none;
+    background: none;
+    appearance: none;
+
+    &--block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    img {
+        cursor: pointer;
+    }
+}

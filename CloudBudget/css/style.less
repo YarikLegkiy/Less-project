@@ -1,0 +1,50 @@
+// compress: true
+
+@import "fonts";
+@import "vars";
+@import "vendor/reset";
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: @black;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 91rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: @pink url("../images/intro-bg.jpg") no-repeat center;
+    background-size: cover;
+    z-index: -1000;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/container";
+@import "blocks/nav";
+@import "blocks/btn";
+@import "blocks/intro";
+@import "blocks/block";
+@import "blocks/video";
+@import "blocks/features";
+@import "blocks/technology";
+@import "blocks/slider-block";
+@import "blocks/contact";
+@import "blocks/form";
+@import "blocks/footer";

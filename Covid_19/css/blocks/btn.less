@@ -1,0 +1,63 @@
+// main: ../style.less
+
+.btn {
+    font-family: inherit;
+
+    background: none;
+    border: none;
+    z-index: 100;
+
+    &--big {
+        padding: 1.6rem 4rem;
+
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: @white;
+        cursor: pointer;
+
+        border-radius: 4.33rem;
+        background: #FB4C47;
+        box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1);
+        
+        transition: background .2s ease-in-out;
+
+        &:hover {
+            background: @light-red;
+        }
+    
+    }
+
+    &--md {
+        padding: 1.13rem 3rem;
+
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: @light-red;
+
+        border: 2px solid @light-red;
+        border-radius: 3.06rem;
+        transition: background .2s ease-in-out, color .2s linear;
+
+        &:hover {
+            color: @white;
+            background: @light-red;
+        }
+    }
+
+    &--sm {
+        padding: 1.46rem 3.33rem;
+
+        font-size: 1.33rem;
+        font-weight: 600;
+        color: @light-red;
+
+        border-radius: 4.33rem;
+        background: rgba(250, 86, 82, 0.15);
+        transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
+
+        &:hover {
+            background: rgba(255, 4, 0, 0.15);
+            box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.11);
+        }
+    }
+}

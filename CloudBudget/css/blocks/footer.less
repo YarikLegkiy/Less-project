@@ -1,0 +1,62 @@
+// main: ../style.less
+
+.footer {
+    width: 100%;
+    padding: 5.66rem 0;
+
+    background: #fafafa;
+
+    &--nav {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6rem;
+    }
+
+    &--list {
+        max-width: 12.3rem;
+    }
+
+    &--title {
+        margin-bottom: 2.2rem;
+
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: @black;
+    }
+
+    &--item {
+        margin-bottom: .5rem;
+
+        font-size: .8rem;
+        font-weight: 400;
+        color: @black;
+
+        a {
+            text-decoration: none;
+            color: @black;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        img {
+            margin-right: 1rem;
+            cursor: pointer;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        p {
+            line-height: 1.5;
+        }
+    }
+
+    &--subtitle {
+        font-size: .8rem;
+        font-weight: 400;
+        color: @black;
+    }
+}

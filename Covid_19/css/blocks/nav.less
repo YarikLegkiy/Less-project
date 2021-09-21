@@ -1,0 +1,58 @@
+// main: ../style.less
+
+.nav {
+    max-width: 33.2rem;
+
+    &--items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 485px) {
+            flex-direction: column;
+        }
+    }
+
+    &--item {
+        margin-right: 2.66rem;
+
+        @media screen and (max-width: 925px) {
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        @media screen and (max-width: 485px) {
+            margin-bottom: 2rem;
+            margin-right: 0;
+        }
+    }
+
+    &--link {
+        position: relative;
+        
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: @dark-green;
+
+        text-decoration: none;
+
+         &:hover {
+            color: @light-red;
+
+            &:after {
+                content: '';
+                display: block;
+                width: .4rem;
+                height: .4rem;
+                position: absolute;
+                bottom: -1rem;
+                left: 50%;
+
+                transform: translateX(-50%);
+                background: @light-red;
+                border-radius: 50%;
+            }
+        }
+    }
+}

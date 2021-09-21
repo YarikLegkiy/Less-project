@@ -1,0 +1,45 @@
+// main: ../style.less
+
+.nav {
+    
+    @media screen and (max-width: 950px) {
+        display: none;
+    }
+}
+
+.nav__item {
+    margin-right: 2.99rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.nav__link {
+    position: relative;
+    font-size: .93rem;
+    font-weight: 500;
+    color: @black-light;
+
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &.has-subnav {
+
+        &:after {
+            position: absolute;
+            top: 50%;
+            right: -0.66rem;
+            transform: translateY(-50%);
+
+            content: "";
+            display: block;
+            border-style: solid;
+            border-width: 4px 2px 0 2px;
+            border-color: @black-light transparent transparent transparent;
+        }
+    }
+}

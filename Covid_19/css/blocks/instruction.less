@@ -1,0 +1,89 @@
+// main: ../style.less
+
+.instruction {
+    position: relative;
+    width: 100%;
+    padding-bottom: 7.8rem;
+
+    @media screen and (max-width: 812px) {
+        padding-bottom: 3.8rem;
+    }
+
+    &--img-first {
+        position: absolute;
+        left: 0;
+        top: 43rem;
+        z-index: -1;
+    }
+
+    &--img-second {
+        position: absolute;
+        right: 0;
+        bottom: 20rem;
+        z-index: -1;
+    }
+
+    &--cards {
+        width: 100%;
+    }
+
+    &--card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 1098px) {
+            flex-direction: column;
+        }
+    }
+
+    &--content {
+        max-width: 43.133rem;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1098px) {
+            margin: 3rem 0;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &--left {
+        margin-right: 2.66rem;
+    }
+
+    &--number {
+        width: 4.6rem;
+        height: 4.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgba(@light-red, .15);
+        border-radius: 50%;
+        
+        h3 {
+            font-size: 2.93rem;
+            font-weight: 700;
+            color: @light-red;
+        }
+    }
+
+    &--title {
+        margin-bottom: 2rem;
+
+        font-size: 3.13rem;
+        font-weight: 700;
+        color: @dark-green;
+    }
+
+    &--text {
+        font-size: 1.15rem;
+        line-height: 2;
+        font-weight: 400;
+        color: @black;
+    }
+}

@@ -1,0 +1,22 @@
+// main: style.less
+
+.text {
+    width: 100%;
+
+    &--center {
+        text-align: center;
+    }
+
+    &--right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1098px) {
+    .fl-d-rev {
+        flex-direction: column-reverse;
+        margin-bottom: 2rem;
+    }
+}

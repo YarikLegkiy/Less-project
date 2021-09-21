@@ -1,0 +1,60 @@
+// compress: true
+
+@import "fonts";
+@import "vars";
+@import "vendors/reset";
+
+html {
+    font-size: 15px;
+}
+
+body {
+    min-width: 345px;
+
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: @black;
+    text-transform: capitalize;
+
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,220,220,.3) 100%);
+
+    &::-webkit-scrollbar {
+        width: .7rem;
+        background-color: #f9f9fd;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: .7rem;
+        background-color: #FB4C47;
+    }
+
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(@black, .1);
+        background-color: #f9f9fd;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Blocks */
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/burger";
+@import "blocks/btn";
+@import "blocks/intro";
+@import "blocks/about";
+@import "blocks/block";
+@import "blocks/contagion";
+@import "blocks/symptoms";
+@import "blocks/instruction";
+@import "blocks/stats";
+@import "blocks/footer";
+
+/* Helpers */
+@import "helpers";

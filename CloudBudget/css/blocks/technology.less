@@ -1,0 +1,51 @@
+// main: ../style.less
+
+.technology {
+    width: 100%;
+    padding: 4.2rem 0 8.5rem 0;
+
+    background: @white;
+
+    &--title {
+        margin-bottom: 4rem;
+
+        text-align: center;
+    }
+}
+
+.technology__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+}
+
+.technology__card {
+    text-align: center;
+
+    img {
+        margin-bottom: -3.5rem;
+        transform: translateY(-3.5rem);
+        cursor: pointer;
+    }
+
+    &--number {
+        font-size: 6.66rem;
+        font-weight: 700;
+        color: rgba(@black, .08);
+
+    }
+
+    &--title {
+        margin-bottom: .66rem;
+
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: @black;
+    }
+
+    &--text {
+        font-size: .8rem;
+        font-weight: 400;
+        color: @black;
+    }
+}

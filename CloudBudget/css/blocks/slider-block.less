@@ -1,0 +1,30 @@
+// main: ../style.less
+
+.slider-block {
+    background: @pink;
+
+    &--title {
+        color: @white;
+    }
+
+    &--text {
+        color: @white;
+    }
+
+    &--images {
+
+        img {
+            margin-right: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 5px 30px rgb(0 0 0 / 10%);
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &--right {
+        max-width: 35.5rem;
+    }
+}

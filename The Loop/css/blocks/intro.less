@@ -1,0 +1,69 @@
+// main: ../style.less
+
+.intro {
+    width: 100%;
+    padding-top: 10.66rem;
+    padding-bottom: 8.86rem;
+
+    @media screen and (max-width: 581px) {
+        background: url(../../images/running-shoes.png) no-repeat right;
+    }
+
+    @media screen and (max-width: 390px) {
+        padding-top: 5.66rem;
+        padding-bottom: 4.66rem;
+    }
+}
+
+.intro__inner {
+    min-height: 22.86rem;
+    display: flex;
+    justify-content: space-between;
+    background: url(../../images/running-shoes.png) no-repeat right;
+
+    @media screen and (max-width: 718px) {
+        flex-direction: column-reverse;
+    }
+
+    @media screen and (max-width: 581px) {
+        background: none;
+    }
+}
+
+.intro__content {
+
+    &--subtitle {
+        margin-bottom: 2.33rem;
+
+        font-size: 2rem;
+        font-weight: 400;
+        color: @black;
+    }
+
+    &--title {
+        margin-bottom: 4.66rem;
+
+        font-size: 3.66rem;
+        font-weight: 700;
+        color: @black;
+        text-transform: uppercase;
+    }
+}
+
+.intro__prices {
+    text-align: end;
+}
+
+.intro__text {
+    margin-bottom: 1rem;
+
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: @black;
+
+    &--big {
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: #D84033;
+    }
+}

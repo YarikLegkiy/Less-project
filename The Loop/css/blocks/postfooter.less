@@ -1,0 +1,32 @@
+// main: ../style.less
+
+.postfooter {
+    width: 100%;
+    padding: 2rem 0;
+
+    background-color: @white;
+
+    @media screen and (max-width: 390px) {
+        padding: 1rem 0;
+    }
+}
+
+.postfooter__content {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 470px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.postfooter__text {
+    font-size: .93rem;
+    font-weight: 400;
+    color: @black;
+
+    @media screen and (max-width: 470px) {
+        margin-bottom: .5rem;
+    }
+}

@@ -1,0 +1,30 @@
+// main: ../style.less
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 1rem 0;
+    background: none;
+    z-index: 1000;
+
+    transition: background .2s ease-in-out;
+
+    &--active {
+        background: @white;
+    }
+
+    &--content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &--nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: 925px) {
+            display: none;
+        }
+    }
+}

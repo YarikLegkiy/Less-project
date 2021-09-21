@@ -1,0 +1,53 @@
+// compress: true
+
+@import "fonts";
+@import "vars";
+@import "vendor/reset";
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: @black;
+    background: #F9F6F1;
+    min-width: 23.72rem;
+
+    &::-webkit-scrollbar {
+        width: .7rem;
+        background-color: #f9f9fd;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: @beige;
+    }
+
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(@black, .1);
+        background-color: #f9f9fd;
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Blocks*/ 
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/btn";
+@import "blocks/delivery";
+@import "blocks/collection";
+@import "blocks/models";
+@import "blocks/footer";
+@import "blocks/postfooter";
+@import "blocks/burger";
+
+/* Helpers */
+@import "helpers";
